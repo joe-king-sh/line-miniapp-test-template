@@ -5,7 +5,7 @@
   "type": "module",
   "author": "",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build --outDir=docs",
     "start": "MODE=LOCAL vite",
     "playwright": "playwright",
     "fix": "run-s fix:*",
