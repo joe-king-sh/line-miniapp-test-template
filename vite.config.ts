@@ -12,7 +12,7 @@ export default async (): Promise<UserConfigExport> => {
       alias: {
         "@/": path.join(__dirname, "src/"),
       },
-    },
+    }
   };
 
   if (process.env.MODE === "LOCAL") {
@@ -38,5 +38,8 @@ export default async (): Promise<UserConfigExport> => {
     };
   }
 
-  return config;
+  // GitHub Pagesデプロイ用ビルド
+  return {...config,
+    base: 'line-miniapp-test-template'
+  };
 };
