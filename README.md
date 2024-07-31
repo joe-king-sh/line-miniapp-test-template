@@ -1,3 +1,11 @@
 # line-miniapp-test-template
 
-LINEミニアプリの検証用サイト立ち上げのテンプレート
+A Template repository for the LINE Mini App test.
+
+## Usage
+
+1. Change the repository name in vite.config.ts
+2. run `npm ci`
+3. run `npm run build`
+4. Set up the GitHub Pages
+5. Push the `docs` directory to the repository
