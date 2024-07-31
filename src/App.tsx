@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { SWRConfig } from "swr";
 import { useLiff } from "./hooks/useLiff";
 import { LoadingPage } from "./pages/LoadingPage";
+import {config} from "@/config";
 import { Router } from "@/routes";
 import "./index.css";
 
@@ -24,7 +25,8 @@ export const App = (): JSX.Element => {
       }}
     >
       <Suspense fallback={<LoadingPage />}>
-        <BrowserRouter>
+      {/* GitHub Pages上でパスにRepository名が入るため */}
+        <BrowserRouter basename={config.repositoryName}>
           <Router />
         </BrowserRouter>
       </Suspense>

@@ -5,8 +5,10 @@
   "type": "module",
   "author": "",
   "scripts": {
-    "build": "vite build --outDir=docs",
-    "start": "MODE=LOCAL vite",
+    "config:local": "cp src/config.local.ts src/config.ts",
+    "config:dev": "cp src/config.dev.ts src/config.ts",
+    "build": "npm run config:dev && vite build --outDir=docs",
+    "start": "npm run config:local && MODE=LOCAL vite",
     "playwright": "playwright",
     "fix": "run-s fix:*",
     "fix:format": "prettier --write '**/*.{ts,tsx,json,yml,yaml,md}'",
