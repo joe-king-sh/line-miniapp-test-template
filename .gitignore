@@ -6,5 +6,5 @@ node_modules/
 /playwright/.cache/
 
 *storybook.log
-
+*.eslintcache
 tmp
