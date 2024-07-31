@@ -5,4 +5,5 @@ export const config: Config = {
   // cspell:disable
   liffId: "2005957091-1Ogyeop2",
   mockedApi: true,
+  repositoryName: "line-miniapp-test-template",
 };
