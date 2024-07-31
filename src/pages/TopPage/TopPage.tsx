@@ -6,7 +6,7 @@ export type TopPageViewProps = {
   idToken?: string;
 };
 
-export const TopPageView = ({idToken}: TopPageViewProps): JSX.Element => {
+export const TopPageView = ({ idToken }: TopPageViewProps): JSX.Element => {
   return (
     <>
       <Helmet>
@@ -21,7 +21,7 @@ export const TopPageView = ({idToken}: TopPageViewProps): JSX.Element => {
 
 export const TopPage = (): JSX.Element => {
   console.log("before liff useLiff");
-  const {idToken} = useLiff()
+  const { idToken } = useLiff();
   console.log("after liff useLiff");
 
   return <TopPageView idToken={idToken} />;
