@@ -4,6 +4,6 @@ export const config: Config = {
   stageName: "LOCAL",
   // cspell:disable
   liffId: "2005957091-1Ogyeop2",
-  mockedApi: true,
+  mockedApi: false,
   repositoryName: "line-miniapp-test-template",
 };
